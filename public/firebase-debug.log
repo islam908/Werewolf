@@ -1,0 +1,70 @@
+[debug] [2025-07-27T13:32:47.237Z] ----------------------------------------------------------------------
+[debug] [2025-07-27T13:32:47.248Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\islam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-07-27T13:32:47.249Z] CLI Version:   14.11.1
+[debug] [2025-07-27T13:32:47.250Z] Platform:      win32
+[debug] [2025-07-27T13:32:47.250Z] Node Version:  v22.17.1
+[debug] [2025-07-27T13:32:47.251Z] Time:          Sun Jul 27 2025 14:32:47 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2025-07-27T13:32:47.252Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-27T13:32:47.259Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-27T13:32:47.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-27T13:32:47.426Z] > authorizing via signed-in user (islambelghazi34@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\islam\Documents\Werrewolf
+
+[debug] [2025-07-27T13:32:54.410Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-27T13:32:54.411Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-27T13:33:00.814Z] Checked if tokens are valid: false, expires at: 1753472223667
+[debug] [2025-07-27T13:33:00.814Z] Checked if tokens are valid: false, expires at: 1753472223667
+[debug] [2025-07-27T13:33:00.815Z] > refreshing access token with scopes: []
+[debug] [2025-07-27T13:33:00.818Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-27T13:33:00.818Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-27T13:33:09.905Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-27T13:33:09.906Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-27T13:33:09.928Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-27T13:33:23.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-27T13:33:23.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project werewolf-00 (Werewolf) 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-27T13:34:11.227Z] Checked if tokens are valid: true, expires at: 1753626788906
+[debug] [2025-07-27T13:34:11.227Z] Checked if tokens are valid: true, expires at: 1753626788906
+[debug] [2025-07-27T13:34:11.227Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/werewolf-00 [none]
+[debug] [2025-07-27T13:34:22.212Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/werewolf-00 200
+[debug] [2025-07-27T13:34:22.213Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/werewolf-00 {"projectId":"werewolf-00","projectNumber":"948073476356","displayName":"Werewolf","name":"projects/werewolf-00","resources":{"hostingSite":"werewolf-00"},"state":"ACTIVE","etag":"1_a4569665-7c84-4658-a885-742296516712"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2025-07-27T13:34:36.407Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-07-27T13:34:58.844Z] *** [apiv2] error from fetch(https://www.gstatic.com/firebasejs/releases.json, {"headers":{},"method":"GET"}): FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+[debug] [2025-07-27T13:34:58.847Z] FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+    at ClientRequest.<anonymous> (C:\Users\islam\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:518:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: Failed to make request to https://www.gstatic.com/firebasejs/releases.json
